@@ -4,3 +4,4 @@ Links : https://talent.supporterz.jp/events/4c610767-5a9a-4058-a6cd-bf3254c9b223
 ## Member
 - Yuki Uehara
 - Ryota Wabuchi
+- Miguel Kato
