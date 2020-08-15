@@ -17,6 +17,13 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -24,6 +31,7 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
+  // margin-top: auto;
 }
 
 /* Custom page CSS
@@ -44,41 +52,4 @@ a.no-color-change:visited,
 a.no-color-change:hover,
 a.no-color-change:active {
   color: #000000;
-}
-
-ul#nav1 {
-  font-size: 100%;
-  font-weight: bold;
-  list-style: none;
-  position: fixed;
-  top: 20px;
-  right: -150px;
-  margin: 0;
-}
-#nav1 li {
-  margin-bottom: 0.8em;
-}
-#nav1 li a {
-  text-decoration: none;
-  color: #333333;
-  display: block;
-  background-repeat: no-repeat;
-  height: 64px;
-  padding-left: 70px;
-  line-height: 64px;
-}
-#nav1 li a:hover {
-  color: #ff9900;
-}
-#nav1 .twitter {
-  background-image: url(twitter.png);
-}
-#nav1 .facebook {
-  background-image: url(facebook.png);
-}
-#nav1 .youtube {
-  background-image: url(youtube.png);
-}
-#nav1 .rss {
-  background-image: url(rss.png);
 }
