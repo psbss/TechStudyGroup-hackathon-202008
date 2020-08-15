@@ -1,2 +1,8 @@
 @import "src/css/custom";
 @import "~bootstrap/scss/bootstrap";
+
+.xy-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
