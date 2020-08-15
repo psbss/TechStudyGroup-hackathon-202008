@@ -1,2 +1,84 @@
 @import "src/css/custom";
 @import "~bootstrap/scss/bootstrap";
+
+img {
+  border-radius: 50%; /* 角丸半径を50%にする(=円形にする) */
+  width: 180px; /* ※縦横を同値に */
+  height: 180px; /* ※縦横を同値に */
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+a.no-color-change:link,
+a.no-color-change:visited,
+a.no-color-change:hover,
+a.no-color-change:active {
+  color: #000000;
+}
+
+ul#nav1 {
+  font-size: 100%;
+  font-weight: bold;
+  list-style: none;
+  position: fixed;
+  top: 20px;
+  right: -150px;
+  margin: 0;
+}
+#nav1 li {
+  margin-bottom: 0.8em;
+}
+#nav1 li a {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  background-repeat: no-repeat;
+  height: 64px;
+  padding-left: 70px;
+  line-height: 64px;
+}
+#nav1 li a:hover {
+  color: #ff9900;
+}
+#nav1 .twitter {
+  background-image: url(twitter.png);
+}
+#nav1 .facebook {
+  background-image: url(facebook.png);
+}
+#nav1 .youtube {
+  background-image: url(youtube.png);
+}
+#nav1 .rss {
+  background-image: url(rss.png);
+}
