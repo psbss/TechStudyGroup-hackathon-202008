@@ -5,6 +5,9 @@ keyName='"Name":'
 keyNickname='"NickName":'
 keyUniversity='"University":'
 keyEmail='"Email":'
+
+keyFace='"FacePic":' 
+
 keySNS='"SNS": {'
 keyTwitter='"Twitter":'
 keyFacebook='"Facebook":'
@@ -74,6 +77,9 @@ universityJson="${keyUniversity} \"$UNIVERSITY\""
 
 read -p "メールアドレスを入力してください！: " EMAIL
 emailJson="${keyEmail} \"$EMAIL\""
+
+read -p "顔写真のファイル名を入力してください！: " FACE
+faceJson="${keyFace} \"$FACE\""
 
 read -p "Twitterのアカウントを入力してください！: " TWITTER
 twitterJson="${keyTwitter} \"$TWITTER\""
@@ -188,6 +194,7 @@ printf '{
   %s,
   %s,
   %s,
+  %s,
   %s
     %s,
     %s,
@@ -236,4 +243,4 @@ printf '{
    %s,
    %s
  }
-}' "${nameJson}" "${nicknameJson}" "${universityJson}"  "${emailJson}" "${keySNS}" "${twitterJson}" "${facebookJson}" "${lineJson}" "${githubJson}" "${youtubeJson}" "${linkedinJson}" "${wantedlyJson}" "${keyWorks}" "${title1Json}" "${term1Json}" "${ss1Json}" "${comment1Json}" "${title2Json}" "${term2Json}" "${ss2Json}" "${comment2Json}" "${title3Json}" "${term3Json}" "${ss3Json}" "${comment3Json}" "${title4Json}" "${term4Json}" "${ss4Json}" "${comment4Json}" "${title5Json}" "${term5Json}" "${ss5Json}" "${comment5Json}" "${keyComment}" "${headerJson}" "${main1Json}" "${main2Json}" "${main3Json}" "${footerJson}"    > dist/input.json
+}' "${nameJson}" "${nicknameJson}" "${universityJson}"  "${emailJson}" "${faceJson}" "${keySNS}" "${twitterJson}" "${facebookJson}" "${lineJson}" "${githubJson}" "${youtubeJson}" "${linkedinJson}" "${wantedlyJson}" "${keyWorks}" "${title1Json}" "${term1Json}" "${ss1Json}" "${comment1Json}" "${title2Json}" "${term2Json}" "${ss2Json}" "${comment2Json}" "${title3Json}" "${term3Json}" "${ss3Json}" "${comment3Json}" "${title4Json}" "${term4Json}" "${ss4Json}" "${comment4Json}" "${title5Json}" "${term5Json}" "${ss5Json}" "${comment5Json}" "${keyComment}" "${headerJson}" "${main1Json}" "${main2Json}" "${main3Json}" "${footerJson}"    > dist/input.json
