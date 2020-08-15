@@ -1,6 +1,23 @@
 const url = "./data.json";
 let tags = [];
 
+function showData(json) {
+  console.log("tags");
+  console.log(tags);
+  // for (let i = 0; i < tags.length; i++) {
+  // let element = document.getElementById(`${tags[i]}`);
+  console.log(tags[0]);
+  let element = document.getElementById(tags[0]);
+  let tag = Object(tags[0]);
+  console.log("tag:")
+  console.log(tag);
+  let text = json.tag;
+  console.log("hey");
+  console.log(text);
+  element.innerHTML = text;
+  // }
+}
+
 function dataCheck(myjson) {
   const keys = Object.keys(myjson);
   for (let i = 0; i < keys.length; i++) {
@@ -10,6 +27,7 @@ function dataCheck(myjson) {
     }
   }
   console.log(tags);
+  showData(myjson);
 }
 
 function getData(url) {
