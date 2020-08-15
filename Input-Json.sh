@@ -41,25 +41,25 @@ keyMain2='"main2":'
 keyMain3='"main3":'
 keyFooter='"footer":'
 
-title2Json="${keyTitle2}"
-term2Json="${keyTerm2}"
-ss2Json="${keySS2}"
-comment2Json="${keyComment2}"
+title2Json="${keyTitle2} \"\""
+term2Json="${keyTerm2} \"\""
+ss2Json="${keySS2} \"\""
+comment2Json="${keyComment2} \"\""
 
-title3Json="${keyTitle3}"
-term3Json="${keyTerm3}"
-ss3Json="${keySS3}"
-comment3Json="${keyComment3}"
+title3Json="${keyTitle3} \"\""
+term3Json="${keyTerm3} \"\""
+ss3Json="${keySS3} \"\""
+comment3Json="${keyComment3} \"\""
 
-title4Json="${keyTitle4}"
-term4Json="${keyTerm4}"
-ss4Json="${keySS4}"
-comment4Json="${keyComment4}"
+title4Json="${keyTitle4} \"\""
+term4Json="${keyTerm4} \"\""
+ss4Json="${keySS4} \"\""
+comment4Json="${keyComment4} \"\""
 
-title5Json="${keyTitle5}"
-term5Json="${keyTerm5}"
-ss5Json="${keySS5}"
-comment5Json="${keyComment5}"
+title5Json="${keyTitle5} \"\""
+term5Json="${keyTerm5} \"\""
+ss5Json="${keySS5} \"\""
+comment5Json="${keyComment5} \"\""
 
 
 
@@ -180,7 +180,9 @@ main3Json="${keyMain3} \"$MAIN3\""
 read -p "メッセージのfooterを入力してください！: " FOOTER
 footerJson="${keyFooter} \"$FOOTER\""
 
-# printfでJSON形式でファイルにリダイレクトする
+mkdir -p dist
+
+ # printfでJSON形式でファイルにリダイレクトする
 printf '{
   %s,
   %s,
@@ -234,4 +236,4 @@ printf '{
    %s,
    %s
  }
-}' "${nameJson}" "${nicknameJson}" "${universityJson}"  "${emailJson}" "${keySNS}" "${twitterJson}" "${facebookJson}" "${lineJson}" "${githubJson}" "${youtubeJson}" "${linkedinJson}" "${wantedlyJson}" "${keyWorks}" "${title1Json}" "${term1Json}" "${ss1Json}" "${comment1Json}" "${title2Json}" "${term2Json}" "${ss2Json}" "${comment2Json}" "${title3Json}" "${term3Json}" "${ss3Json}" "${comment3Json}" "${title4Json}" "${term4Json}" "${ss4Json}" "${comment4Json}" "${title5Json}" "${term5Json}" "${ss5Json}" "${comment5Json}" "${keyComment}" "${headerJson}" "${main1Json}" "${main2Json}" "${main3Json}" "${footerJson}"    > Input.json
+}' "${nameJson}" "${nicknameJson}" "${universityJson}"  "${emailJson}" "${keySNS}" "${twitterJson}" "${facebookJson}" "${lineJson}" "${githubJson}" "${youtubeJson}" "${linkedinJson}" "${wantedlyJson}" "${keyWorks}" "${title1Json}" "${term1Json}" "${ss1Json}" "${comment1Json}" "${title2Json}" "${term2Json}" "${ss2Json}" "${comment2Json}" "${title3Json}" "${term3Json}" "${ss3Json}" "${comment3Json}" "${title4Json}" "${term4Json}" "${ss4Json}" "${comment4Json}" "${title5Json}" "${term5Json}" "${ss5Json}" "${comment5Json}" "${keyComment}" "${headerJson}" "${main1Json}" "${main2Json}" "${main3Json}" "${footerJson}"    > dist/input.json
