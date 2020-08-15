@@ -8,11 +8,10 @@ function showData(json) {
   // let element = document.getElementById(`${tags[i]}`);
   console.log(tags[0]);
   let element = document.getElementById(tags[0]);
-  let tag = Object(tags[0]);
+  let tag = String(tags[0]);
   console.log("tag:")
   console.log(tag);
   let text = json.tag;
-  console.log("hey");
   console.log(text);
   element.innerHTML = text;
   // }
@@ -35,6 +34,7 @@ function getData(url) {
   }).then((response) => {
     return response.json();
   }).then((myjson) => {
+    console.log("myjson");
     console.log(myjson);
     dataCheck(myjson);
   }).catch((e) => {
