@@ -1,0 +1,30 @@
+{
+  "name": "techstudygroup-hackathon-202008",
+  "version": "1.0.0",
+  "description": "Links : https://talent.supporterz.jp/events/4c610767-5a9a-4058-a6cd-bf3254c9b223/",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psbss/TechStudyGroup-hackathon-202008.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psbss/TechStudyGroup-hackathon-202008/issues"
+  },
+  "homepage": "https://github.com/psbss/TechStudyGroup-hackathon-202008#readme",
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
