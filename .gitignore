@@ -4,3 +4,15 @@
 *.css.map
 *.sass.map
 *.scss.map
+
+### Mac OS ###
+.DS_Store
+
+### npm ###
+node_modules
+
+### public dir ###
+dist
+dest
+dst
+public
