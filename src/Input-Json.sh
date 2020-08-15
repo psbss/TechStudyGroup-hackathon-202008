@@ -1,50 +1,5 @@
 ﻿#!/usr/bin/bash
 
-# $1:"name:"のvalue値
-# $2:"NickName:"のvalue値
-# $3:"University:"のvalue値
-# $4:"Email:"のvalue値
-
- # $5:"Twitter:"のvalue値
- # $6:"Facebook:"のvalue値
- # $7:"LINE:"のvalue値
- # $8:"Github:"のvalue値
- # $9:"Youtube:"のvalue値
- # $10:"Linkedin:"のvalue値
- # $11:"Wantedly:"のvalue値
-
- # $12:"Title(Works1):"のvalue値
- # $13:"Term(Works1):"のvalue値
- # $14:"SS(Works1):"のvalue値
- # $15:"Comment(Works1):"のvalue値
-
- # $16:"Title(Works2):"のvalue値
- # $17:"Term(Works2):"のvalue値
- # $18:"SS(Works2):"のvalue値
- # $19:"Comment(Works2):"のvalue値
-
- # $20:"Title(Works3):"のvalue値
- # $21:"Term(Works3):"のvalue値
- # $22:"SS(Works3):"のvalue値
- # $23:"Comment(Works3):"のvalue値
-
- # $24:"Title(Works4):"のvalue値
- # $25:"Term(Works4):"のvalue値
- # $26:"SS(Works4):"のvalue値
- # $27:"Comment(Works4):"のvalue値
-
- # $28:"Title(Works5):"のvalue値
- # $29:"Term(Works5):"のvalue値
- # $30:"SS(Works5):"のvalue値
- # $31:"Comment(Works5):"のvalue値
-
- # $32:"header:"のvalue値
- # $33:"main1:"のvalue値
- # $34:"main2:"のvalue値
- # $35:"main3:"のvalue値
- # $36:"footer:"のvalue値
-
-
 # keyを代入
 keyName='"Name":'
 keyNickname='"NickName":'
@@ -84,47 +39,116 @@ keyHeader='"header":'
 keyMain1='"main1":'
 keyMain2='"main2":'
 keyMain3='"main3":'
-
 keyFooter='"footer":'
 
-# keyとパラメータを変数に代入
-nameJson="${keyName} \"$1\""
-nicknameJson="${keyNickname} \"$2\""
-universityJson="${keyUniversity} \"$3\""
-emailJson="${keyEmail} \"$4\""
-twitterJson="${keyTwitter} \"$5\""
-facebookJson="${keyFacebook} \"$6\""
-lineJson="${keyLine} \"$7\""
-githubJson="${keyGithub} \"$8\""
-youtubeJson="${keyYoutube} \"$9\""
-linkedinJson="${keyLinkedin} \"${10}\""
-wantedlyJson="${keyWantedly} \"${11}\""
-title1Json="${keyTitle1} \"${12}\""
-term1Json="${keyTerm1} \"${13}\""
-ss1Json="${keySS1} \"${14}\""
-comment1Json="${keyComment1} \"${15}\""
-title2Json="${keyTitle2} \"${16}\""
-term2Json="${keyTerm2} \"${17}\""
-ss2Json="${keySS2} \"${18}\""
-comment2Json="${keyComment2} \"${19}\""
-title3Json="${keyTitle3} \"${20}\""
-term3Json="${keyTerm3} \"${21}\""
-ss3Json="${keySS3} \"${22}\""
-comment3Json="${keyComment3} \"${23}\""
-title4Json="${keyTitle4} \"${24}\""
-term4Json="${keyTerm4} \"${25}\""
-ss4Json="${keySS4} \"${26}\""
-comment4Json="${keyComment4} \"${27}\""
-title5Json="${keyTitle5} \"${28}\""
-term5Json="${keyTerm5} \"${29}\""
-ss5Json="${keySS5} \"${30}\""
-comment5Json="${keyComment5} \"${31}\""
-headerJson="${keyHeader} \"${32}\""
-main1Json="${keyMain1} \"${33}\""
-main2Json="${keyMain2} \"${34}\""
-main3Json="${keyMain3} \"${35}\""
 
-footerJson="${keyFooter} \"${36}\""
+read -p "名前を入力してください！: " NAME
+nameJson="${keyName} \"$NAME\""
+
+read -p "ニックネームを入力してください！: " NICKNAME
+nicknameJson="${keyNickname} \"$NICKNAME\""
+
+read -p "大学名を入力してください！: " UNIVERSITY
+universityJson="${keyUniversity} \"$UNIVERSITY\""
+
+read -p "メールアドレスを入力してください！: " EMAIL
+emailJson="${keyEmail} \"$EMAIL\""
+
+read -p "Twitterのアカウントを入力してください！: " TWITTER
+twitterJson="${keyTwitter} \"$TWITTER\""
+
+read -p "Facebookのアカウントを入力してください！: " FACEBOOK
+facebookJson="${keyFacebook} \"$FACEBOOK\""
+
+read -p "LINEのアカウントを入力してください！: " LINE
+lineJson="${keyLine} \"$LINE\""
+
+read -p "Githubのアカウントを入力してください！: " GITHUB
+githubJson="${keyGithub} \"$GITHUB\""
+
+read -p "Youtubeのアカウントを入力してください！: " YOUTUBE
+youtubeJson="${keyYoutube} \"$YOUTUBE\""
+
+read -p "Linkedinのアカウントを入力してください！: " LINKEDIN
+linkedinJson="${keyLinkedin} \"$LINKEDIN\""
+
+read -p "Wantedlyのアカウントを入力してください！: " WANTEDLY
+wantedlyJson="${keyWantedly} \"$WANTEDLY\""
+
+read -p "作品1のタイトルを入力してください！: " TITLE1
+title1Json="${keyTitle1} \"$TITLE1\""
+
+read -p "作品1の製作期間を入力してください！: " TERM1
+term1Json="${keyTerm1} \"$TERM1\""
+
+read -p "作品1のSSを入力してください！: " SS1
+ss1Json="${keySS1} \"$SS1\""
+
+read -p "作品1のコメントを入力してください！: " COMMENT1
+comment1Json="${keyComment1} \"$COMMENT1\""
+
+read -p "作品2のタイトルを入力してください！: " TITLE2
+title2Json="${keyTitle2} \"$TITLE2\""
+
+read -p "作品2の製作期間を入力してください！: " TERM2
+term2Json="${keyTerm2} \"$TERM2\""
+
+read -p "作品2のSSを入力してください！: " SS2
+ss2Json="${keySS2} \"$SS2\""
+
+read -p "作品2のコメントを入力してください！: " COMMENT2
+comment2Json="${keyComment2} \"$COMMENT2\""
+
+read -p "作品3のタイトルを入力してください！: " TITLE3
+title3Json="${keyTitle3} \"$TITLE3\""
+
+read -p "作品3の製作期間を入力してください！: " TERM3
+term3Json="${keyTerm3} \"$TERM3\""
+
+read -p "作品3のSSを入力してください！: " SS3
+ss3Json="${keySS3} \"$SS3\""
+
+read -p "作品3のコメントを入力してください！: " COMMENT3
+comment3Json="${keyComment3} \"$COMMENT3\""
+
+read -p "作品4のタイトルを入力してください！: " TITLE4
+title4Json="${keyTitle4} \"$TITLE4\""
+
+read -p "作品4の製作期間を入力してください！: " TERM4
+term4Json="${keyTerm4} \"$TERM4\""
+
+read -p "作品4のSSを入力してください！: " SS4
+ss4Json="${keySS4} \"$SS4\""
+
+read -p "作品4のコメントを入力してください！: " COMMENT4
+comment4Json="${keyComment4} \"$COMMENT4\""
+
+read -p "作品5のタイトルを入力してください！: " TITLE5
+title5Json="${keyTitle5} \"$TITLE5\""
+
+read -p "作品5の製作期間を入力してください！: " TERM5
+term5Json="${keyTerm5} \"$TERM5\""
+
+read -p "作品5のSSを入力してください！: " SS5
+ss5Json="${keySS5} \"$SS5\""
+
+read -p "作品5のコメントを入力してください！: " COMMENT5
+comment5Json="${keyComment5} \"$COMMENT5\""
+
+read -p "メッセージのheaderを入力してください！: " COMMENT
+headerJson="${keyHeader} \"$COMMENT\""
+
+read -p "本文1を入力してください！: " MAIN1
+main1Json="${keyMain1} \"$MAIN1\""
+
+read -p "本文2を入力してください！: " MAIN2
+main2Json="${keyMain2} \"$MAIN2\""
+
+read -p "本文3を入力してください！: " MAIN3
+main3Json="${keyMain3} \"$MAIN3\""
+
+read -p "メッセージのfooterを入力してください！: " FOOTER
+footerJson="${keyFooter} \"$FOOTER\""
 
 # printfでJSON形式でファイルにリダイレクトする
 printf '{
