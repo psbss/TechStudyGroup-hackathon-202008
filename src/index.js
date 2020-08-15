@@ -1,12 +1,15 @@
 const url = "./data.json";
-let tags;
+let tags = [];
 
 function dataCheck(myjson) {
   const keys = Object.keys(myjson);
-  console.log(keys.length);
   for (let i = 0; i < keys.length; i++) {
     let res = document.getElementById(`${keys[i]}`);
+    if (res != null) {
+      tags.push(keys[i]);
+    }
   }
+  console.log(tags);
 }
 
 function getData(url) {
