@@ -1,6 +1,47 @@
 @import "src/css/custom";
 @import "~bootstrap/scss/bootstrap";
 
+// --- Initialize ---
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+// --- main page ---
+
+.page-move-link {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+
+  &-left {
+    max-width: 40%;
+    margin: 0 auto 0 10%;
+    padding: 0.25rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+  &-right {
+    max-width: 40%;
+    margin: 0 10% 0 auto;
+    padding: 0.25rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+  &-symbol {
+    font-size: 1.4rem;
+  }
+}
+
+// --- profile page ---
+
 .xy-center {
   display: flex;
   justify-content: center;
