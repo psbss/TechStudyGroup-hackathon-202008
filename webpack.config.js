@@ -69,7 +69,12 @@ module.exports = {
     }),
     // html をsrcからdistに移す処理
     new HtmlWebpackPlugin({
+      template: "src/html/index.html",
+      filename: "index.html"
+    }),
+    new HtmlWebpackPlugin({
       template: "src/html/profile.html",
+      filename: "profile.html"
     }),
     // jquery settings
     new webpack.ProvidePlugin({
