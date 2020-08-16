@@ -18,9 +18,10 @@ body {
 
 .page-move-link {
   width: 100%;
+  max-width: 450px;
   font-size: 1.2rem;
   font-weight: 300;
-  margin-top: 1.5rem;
+  margin: 2rem auto 4rem;
 
   &-left {
     max-width: 40%;
@@ -38,6 +39,22 @@ body {
   &-symbol {
     font-size: 1.4rem;
   }
+}
+
+// --- gallary page ---
+
+.gallary {
+  width: 100%;
+  max-width: 620px;
+  margin: auto;
+
+  img {
+    height: 190px;
+  }
+}
+
+.card-title {
+  font-weight: 600;
 }
 
 // --- profile page ---
