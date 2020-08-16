@@ -1,2 +1,52 @@
 @import "src/css/custom";
 @import "~bootstrap/scss/bootstrap";
+
+.xy-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt {
+  &-40 {
+    margin-top: 40px;
+  }
+}
+
+.profile {
+  width: 100%;
+  max-width: 450px;
+  padding: 15px;
+  margin: auto;
+}
+
+.img {
+  &-face {
+    max-width: 200px;
+    margin: auto;
+  }
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.github {
+  background-color: #333333;
+}
+
+.line {
+  background-color: #00b900;
+}
+
+.wantedly {
+  background-color: #21bddb;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.youtube {
+  background-color: #da1725;
+}
