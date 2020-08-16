@@ -5,82 +5,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
-<body>
-  <div class="container-fluid">
+<body class="text-center">
+  <div class="profile">
+    <div class="img-face">
+      <img class="rounded-circle img-fluid" src="https://picsum.photos/280">
+    </div>
+    <div class="mt-3">
+      <p id="Name" class="mb-0 name">Name</p>
+      <p id="University" class="font-weight-light">University</p>
+    </div>
+
     <div class="row">
-      <!-- 左側の移動ボタン -->
-      <a href="" class="col-1 xy-center">
-        <p class="block">Main</p>
-      </a>
-      <!-- メインカラム -->
-      <div class="col-10">
-        <div class="mt-40">
-          <div class="profile mt-5">
-            <div class="img-face">
-              <img class="rounded-circle img-fluid" src="https://picsum.photos/280">
-            </div>
-            <div class="mt-3 text-center">
-              <p id="Nickname" class="mb-0">Nickname</p>
-              <p id="Name" class="mb-0">Name</p>
-            </div>
-            <div class="mt-2 text-center">
-              <p id="University" class="font-weight-light">University</p>
-            </div>
-            <div class="mt-5 text-center">
-              <p id="Skill" class="font-weight-bold">Skill</p>
-            </div>
-            <div class="mt-4">
-              <p>Contact</p>
-              <div class="row">
-                <div class="col-12">
-                  <p>Email:<span id="Email">Email</span></p>
-                </div>
-                <div class="col-6">
-                  <a href="" class="text-decoration-none">
-                    <div class="rounded-lg text-white m-2 p-2 text-center twitter">Twitter</div>
-                  </a>
-                  <a href="" class="text-decoration-none">
-                    <div class="rounded-lg text-white m-2 p-2 text-center line">LINE</div>
-                  </a>
-                  <a href="" class="text-decoration-none">
-                    <div class="rounded-lg text-white m-2 p-2 text-center facebook">Facebook</div>
-                  </a>
-                </div>
-                <div class="col-6">
-                  <a href="" class="text-decoration-none">
-                    <div class="rounded-lg text-white m-2 p-2 text-center github">Github</div>
-                  </a>
-                  <a href="" class="text-decoration-none">
-                    <div class="rounded-lg text-white m-2 p-2 text-center wantedly">Wantedly</div>
-                  </a>
-                  <a href="" class="text-decoration-none">
-                    <div class="rounded-lg text-white m-2 p-2 text-center youtube">Youtube</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="col-12 my-3">
+        <p>Email:<span id="Email">Email</span></p>
+      </div>
+      <div class="col-2"><a href="" class="text-decoration-none text-reset">
+          <div class="text-white p-2 rounded-icon twitter"><i class="fab fa-twitter"></i></div>
+        </a></div>
+      <div class="col-2"><a href="" class="text-decoration-none text-reset">
+          <div class="text-white p-2 rounded-icon github"><i class="fab fa-github"></i></div>
+        </a></div>
+      <div class="col-2"><a href="" class="text-decoration-none text-reset">
+          <div class="text-white p-2 rounded-icon facebook"><i class="fab fa-facebook-square"></i></div>
+        </a></div>
+      <div class="col-2"><a href="" class="text-decoration-none text-reset">
+          <div class="text-white p-2 rounded-icon line"><i class="fab fa-line"></i></div>
+        </a></div>
+      <div class="col-2"><a href="" class="text-decoration-none text-reset">
+          <div class="text-white p-2 rounded-icon wantedly">W</div>
+        </a></div>
+      <div class="col-2"><a href="" class="text-decoration-none text-reset">
+          <div class="text-white p-2 rounded-icon youtube"><i class="fab fa-youtube"></i></div>
+        </a></div>
+    </div>
+    <div class="page-move-link">
+      <a href="./index.html" class="text-reset text-decoration-none">
+        <div class="page-move-link-left"><span class="page-move-link-symbol">&lt;</span> Home <i
+            class="fas fa-home"></i>
         </div>
-      </div>
-      <!-- 右側の移動ボタン -->
-      <div class="col-1">
-      </div>
+      </a>
+      <a href="./works.html" class="text-reset text-decoration-none">
+        <div class="page-move-link-right"><i class="fas fa-paint-brush"></i> Works <span
+            class="page-move-link-symbol">&gt;</span></div>
+      </a>
     </div>
   </div>
 
-  <div class="footer">
-    <div class="container">
-      <i class="fab fa-twitter-square fa-2x"></i>
-      <a class="no-color-change" href="">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <i class="fab fa-linkedin fa-2x"></i>
-      <i class="fab fa-facebook fa-2x"></i>
-      <i class="fab fa-instagram fa-2x"></i>
-    </div>
-  </div>
 </body>
 
 </html>
